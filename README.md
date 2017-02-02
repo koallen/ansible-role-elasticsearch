@@ -29,11 +29,23 @@ None.
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Deploy elasticsearch with default configuration
 
     - hosts: servers
       roles:
          - { role: koallen.elasticsearch }
+
+Example Playbook (with variables)
+----------------
+
+Deploy elasticsearch with custom configurations
+
+    - hosts: servers
+      roles:
+         - { role: koallen.elasticsearch }
+      vars:
+         - elasticsearch_path_data: /home/public/elasticsearch
+         - elasticsearch_network_host: 0.0.0.0
 
 License
 -------
@@ -43,4 +55,4 @@ MIT
 Author Information
 ------------------
 
-You are welcomed to check out my blog [here](https://shawnliu.me).
+This role is written by [Liu Siyuan](https://github.com/koallen). You are welcomed to check out my blog [here](https://shawnliu.me).
