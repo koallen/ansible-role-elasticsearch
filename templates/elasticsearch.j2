@@ -1,0 +1,5 @@
+path.data: {{ elasticsearch_path_data }}
+
+network.host: {{ elasticsearch_network_host }}
+
+discovery.zen.ping.unicast.hosts: ["{{ hostvars.values()|map(attribute='ansible_host')|join('", "') }}"]

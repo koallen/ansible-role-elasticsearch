@@ -1,0 +1,6 @@
+---
+
+- name: Install elasticsearch 5.1.2 on Debian platform
+  apt:
+      deb: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.1.2.deb
+      state: present

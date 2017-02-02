@@ -1,0 +1,6 @@
+---
+
+- name: Install elasticsearch 5.1.2 on RedHat platform
+  yum:
+      name: https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.1.2.rpm
+      state: present
