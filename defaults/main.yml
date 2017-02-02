@@ -1,4 +1,4 @@
 ---
 
 elasticsearch_path_data: ""
-elasticsearch_network_host: localhost
+elasticsearch_network_host: ""

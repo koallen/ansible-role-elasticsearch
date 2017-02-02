@@ -1,5 +1,9 @@
+{% if elasticsearch_path_data != "" %}
 path.data: {{ elasticsearch_path_data }}
+{% endif %}
 
+{% if elasticsearch_network_host != "" %}
 network.host: {{ elasticsearch_network_host }}
+{% endif %}
 
 discovery.zen.ping.unicast.hosts: ["{{ hostvars.values()|map(attribute='ansible_host')|join('", "') }}"]

@@ -17,7 +17,7 @@ Available variables are listed below along with their defaults
 
 Sets the `path.data` value in config file. It specifies where the data are stored.
 
-    elasticsearch_network_host: localhost
+    elasticsearch_network_host: ""
 
 Sets the `network.host` value in config file. It specifies which interface to listen on for the service.
 
